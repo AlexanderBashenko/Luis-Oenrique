@@ -6,6 +6,7 @@
 a {
   display: inline-block;
   text-decoration: none;
+  outline: none;
 }
 
 ul,
@@ -19,6 +20,23 @@ li {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-4 {
+  width: 33.333%;
+  float: left;
+  padding: 0px 15px;
 }
 
 .header {
@@ -54,7 +72,7 @@ li {
 }
 
 .header .header__text {
-  color: #4d4d4d;
+  color: rgba(77, 77, 77, 0.6);
   font-family: "Asap", sans-serif;
   font-weight: 500;
   font-size: 22px;
@@ -105,7 +123,6 @@ li {
 }
 
 .header .menu a {
-  text-decoration: none;
   line-height: 30px;
   color: #4d4d4d;
   font-size: 16px;
@@ -145,6 +162,7 @@ li {
   font-weight: 700;
   max-width: 295px;
   padding-top: 70px;
+  letter-spacing: 1.2px;
   position: relative;
 }
 
@@ -168,11 +186,99 @@ li {
 }
 
 .about .about__btn {
+  padding: 19px 46px 17px 47px;
+  border: 1px solid #4d4d4d;
+  max-width: 245px;
+}
+
+.about .about__btn a {
   color: #4d4d4d;
   font-family: "Asap", sans-serif;
   font-size: 16px;
   line-height: 10px;
-  padding: 19px 46px 17px 47px;
-  border: 1px solid #4d4d4d;
-  max-width: 245px;
+  text-transform: uppercase;
+}
+
+.services {
+  background-color: #f6f6f6;
+  padding-top: 115px;
+}
+
+.services .services__title {
+  text-transform: uppercase;
+  color: rgba(77, 77, 77, 0.8);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 49px;
+  letter-spacing: 1.2px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.services .services__title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.services .services__items {
+  text-align: center;
+}
+
+.services .services__items .col-4 + .col-4 {
+  padding-bottom: 80px;
+}
+
+.services .services__items .services__text {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 24px;
+  line-height: 49px;
+}
+
+.skills {
+  padding-top: 115px;
+  padding-bottom: 125px;
+}
+
+.skills .skills__title {
+  text-transform: uppercase;
+  color: rgba(77, 77, 77, 0.8);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 49px;
+  letter-spacing: 1.2px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.skills .skills__title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.skills .skills__items {
+  background-image: url(../img/skill.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 408px;
 }
