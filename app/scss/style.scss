@@ -76,7 +76,7 @@ li{
         display: inline-block;
         color: $gray;
         font-family: $font;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
         line-height: 10px;
         border: 1px solid $gray;
@@ -159,7 +159,7 @@ li{
         margin-bottom: 40px;
     }
     .about__btn{
-        padding: 19px 46px 17px 47px;
+        padding: 13px 46px 13px 47px;
         border: 1px solid $gray;
         max-width: 245px;
         a{
@@ -168,6 +168,7 @@ li{
             font-size: 16px;
             line-height: 10px;
             text-transform: uppercase;
+            font-weight: 500;
         }
     }
 }
@@ -239,5 +240,51 @@ li{
         background-repeat: no-repeat;
         background-position: center;
         min-height: 408px;
+    }
+}
+.portfolio{
+    padding: 120px 0;
+    background-color: #f6f6f6;
+    text-align: center;
+    .title{
+        text-transform: uppercase;
+        color: rgba(#4d4d4d, .8);
+        font-family: $font;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 49px;
+        letter-spacing: 1.2px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 70px;
+        &:before{
+            content: "";
+            width: 60px;
+            height: 4px;
+            background-color: $gray;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    }
+    .col-4 + .col-4{
+        padding-bottom: 30px;
+    }
+    .btn{
+        padding: 13px 46px 13px 47px;
+        border: 1px solid transparent;
+        max-width: 190px;
+        background-color: #fff;
+        margin: 0 auto;
+        a{
+            font-family: $font;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $gray;
+        }
     }
 }

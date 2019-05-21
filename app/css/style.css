@@ -86,7 +86,7 @@ li {
   display: inline-block;
   color: #4d4d4d;
   font-family: "Asap", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 10px;
   border: 1px solid #4d4d4d;
@@ -186,7 +186,7 @@ li {
 }
 
 .about .about__btn {
-  padding: 19px 46px 17px 47px;
+  padding: 13px 46px 13px 47px;
   border: 1px solid #4d4d4d;
   max-width: 245px;
 }
@@ -197,6 +197,7 @@ li {
   font-size: 16px;
   line-height: 10px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .services {
@@ -281,4 +282,58 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 408px;
+}
+
+.portfolio {
+  padding: 120px 0;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.portfolio .title {
+  text-transform: uppercase;
+  color: rgba(77, 77, 77, 0.8);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 49px;
+  letter-spacing: 1.2px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.portfolio .title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.portfolio .col-4 + .col-4 {
+  padding-bottom: 30px;
+}
+
+.portfolio .btn {
+  padding: 13px 46px 13px 47px;
+  border: 1px solid transparent;
+  max-width: 190px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.portfolio .btn a {
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4d4d4d;
 }
