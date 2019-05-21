@@ -1,0 +1,339 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-4 {
+  width: 33.333%;
+  float: left;
+  padding: 0px 15px;
+}
+
+.header {
+  padding: 30px 0px;
+  background-image: url(../img/bgr-header.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header .header__content {
+  background-image: url(../img/header-fon.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  -webkit-background-size: 80% 80%;
+          background-size: 80%;
+  min-height: 645px;
+}
+
+.header .logo {
+  margin-bottom: 180px;
+  display: inline-block;
+}
+
+.header .header__title {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 90px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.header .header__text {
+  color: rgba(77, 77, 77, 0.6);
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 20px;
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+
+.header .header__btn-1,
+.header .header__btn-2 {
+  display: inline-block;
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 10px;
+  border: 1px solid #4d4d4d;
+  text-align: center;
+}
+
+.header .header__btn-1:hover,
+.header .header__btn-2:hover {
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.header .header__btn-1 {
+  margin-right: 20px;
+  padding: 20px 34px 18px 30px;
+}
+
+.header .header__btn-2 {
+  padding: 20px 49px 18px 49px;
+}
+
+.header .menu {
+  float: right;
+  margin-bottom: 55px;
+}
+
+.header .menu li {
+  display: inline-block;
+}
+
+.header .menu li + li {
+  padding-left: 40px;
+}
+
+.header .menu a {
+  line-height: 30px;
+  color: #4d4d4d;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+}
+
+.header .menu a:hover {
+  text-transform: capitalize;
+  cursor: pointer;
+  border-color: #4d4d4d;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.about {
+  padding: 110px 0px 126px;
+}
+
+.about .about__content {
+  background-image: url(../img/about-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  -webkit-background-size: 50% 50%;
+          background-size: 50%;
+  min-height: 440px;
+}
+
+.about .about__title {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 46px;
+  line-height: 49px;
+  font-weight: 700;
+  max-width: 295px;
+  padding-top: 70px;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.about .about__title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: 60px;
+}
+
+.about .about__text {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  max-width: 470px;
+  margin-bottom: 40px;
+}
+
+.about .about__btn {
+  padding: 13px 46px 13px 47px;
+  border: 1px solid #4d4d4d;
+  max-width: 245px;
+}
+
+.about .about__btn a {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  line-height: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.services {
+  background-color: #f6f6f6;
+  padding-top: 115px;
+}
+
+.services .services__title {
+  text-transform: uppercase;
+  color: rgba(77, 77, 77, 0.8);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 49px;
+  letter-spacing: 1.2px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.services .services__title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.services .services__items {
+  text-align: center;
+}
+
+.services .services__items .col-4 + .col-4 {
+  padding-bottom: 80px;
+}
+
+.services .services__items .services__text {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 24px;
+  line-height: 49px;
+}
+
+.skills {
+  padding-top: 115px;
+  padding-bottom: 125px;
+}
+
+.skills .skills__title {
+  text-transform: uppercase;
+  color: rgba(77, 77, 77, 0.8);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 49px;
+  letter-spacing: 1.2px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.skills .skills__title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.skills .skills__items {
+  background-image: url(../img/skill.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 408px;
+}
+
+.portfolio {
+  padding: 120px 0;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.portfolio .title {
+  text-transform: uppercase;
+  color: rgba(77, 77, 77, 0.8);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 49px;
+  letter-spacing: 1.2px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.portfolio .title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.portfolio .col-4 + .col-4 {
+  padding-bottom: 30px;
+}
+
+.portfolio .btn {
+  padding: 13px 46px 13px 47px;
+  border: 1px solid transparent;
+  max-width: 190px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.portfolio .btn a {
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
