@@ -112,13 +112,67 @@ li {
   text-transform: uppercase;
   font-family: "Asap", sans-serif;
   font-weight: 400;
+  border-bottom: 2px solid transparent;
 }
 
 .header .menu a:hover {
   text-transform: capitalize;
   cursor: pointer;
-  border-bottom: 2px solid #4d4d4d;
+  border-color: #4d4d4d;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.about {
+  padding: 110px 0px 126px;
+}
+
+.about .about__content {
+  background-image: url(../img/about-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  -webkit-background-size: 50% 50%;
+          background-size: 50%;
+  min-height: 440px;
+}
+
+.about .about__title {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 46px;
+  line-height: 49px;
+  font-weight: 700;
+  max-width: 295px;
+  padding-top: 70px;
+  position: relative;
+}
+
+.about .about__title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: 60px;
+}
+
+.about .about__text {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  max-width: 470px;
+  margin-bottom: 40px;
+}
+
+.about .about__btn {
+  color: #4d4d4d;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  line-height: 10px;
+  padding: 19px 46px 17px 47px;
+  border: 1px solid #4d4d4d;
+  max-width: 245px;
 }
