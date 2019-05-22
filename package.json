@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^3.7.0",
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
@@ -17,10 +18,10 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglifyjs": "^0.6.2",
-    "normalize.css": "^8.0.1"
-  },
-  "dependencies": {
     "mixitup": "^3.3.1",
-    "slick-carousel": "^1.8.1"
-  }
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
+  },
+  "dependencies": {}
 }
