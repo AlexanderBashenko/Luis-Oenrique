@@ -26,7 +26,7 @@ gulp.task('css', function(){
 });
 
 gulp.task('script', function(){
-    return gulp.src('node_modules/slick-carousel/slick/slick.js')
+    return gulp.src(['node_modules/slick-carousel/slick/slick.js', 'node_modules/wow.js/dist/wow.js'])
             .pipe(concat('libs.min.js'))
             .pipe(uglifyjs())
             .pipe(gulp.dest('app/js'))
