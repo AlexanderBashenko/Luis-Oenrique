@@ -36,6 +36,11 @@ li{
     float: left;
     padding: 0px 15px;
   }
+  .col-3{
+      width: 25%;
+      float: left;
+      padding: 0px 15px;
+  }
 .header{
     padding: 30px 0px;
     background-image: url(../img/bgr-header.png);
@@ -124,7 +129,7 @@ li{
     }
 }
 .about{
-    padding: 110px 0px 126px;
+    padding: 120px 0px 126px;
     .about__content{
         background-image: url(../img/about-fon.jpg);
         background-repeat: no-repeat;
@@ -176,7 +181,7 @@ li{
 }
 .services{
     background-color: #f6f6f6;
-    padding-top: 115px;
+    padding-top: 120px;
     .services__title{
         text-transform: uppercase;
         color: rgba(#4d4d4d, .8);
@@ -213,8 +218,8 @@ li{
     }
 }
 .skills{
-    padding-top: 115px;
-    padding-bottom: 125px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     .skills__title{
         text-transform: uppercase;
         color: rgba(#4d4d4d, .8);
@@ -388,5 +393,42 @@ li{
     .slider__inner .slick-dots li.slick-active button{
         border: 1px solid #212121;
         background-color: #212121;
+    }
+}
+.funfact{
+    padding-bottom: 150px;
+    .content{
+        min-height: 300px;
+        text-align: center;
+        background-color: #f6f6f6;
+    }
+    img{
+        padding-top: 50px;
+    }
+    .title{
+        color: #212121;
+        font-family: $font;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 32px;
+        opacity: .9;
+    }
+    .text{
+        color: #212121;
+        font-family: $font;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        opacity: .9;
+        text-transform: uppercase;
+    }
+    .img-2{
+        padding-top: 21px;
+    }
+    .img-3{
+        padding-top: 24px;
+    }
+    .img-4{
+        padding-top: 16px;
     }
 }
