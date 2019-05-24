@@ -8,15 +8,13 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,500,700|Lato:300,400|Montserrat&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="container">
             <div class="header__content">
                 <div class="logo">
@@ -26,11 +24,11 @@
                 </div>
                 <nav class="menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header__title">Luis Oenrique</div>
@@ -44,7 +42,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__content">
                 <div class="about__title">
@@ -64,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="services__title">
                 SERVICES
@@ -119,39 +117,45 @@
             <div class="skills__items"></div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="content">
                 <div class="title">
                     portfolio
                 </div>
                 <div class="row">
-                    <div class="col-4 wow fadeInLeftBig">
+                    <div class="col-4 wow fadeInLeftBig" data-wow-offset="600" data-wow-delay=".6s"
+                    data-wow-duration="2s">
                         <div class="item">
                             <img src="img/portfolio-1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-4 wow fadeInDownBig">
+                    <div class="col-4 wow fadeInDownBig" data-wow-offset="600" data-wow-delay=".6s"
+                    data-wow-duration="2s">
                         <div class="item">
                             <img src="img/portfolio-2.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-4 wow fadeInRightBig">
+                    <div class="col-4 wow fadeInRightBig" data-wow-offset="600" data-wow-delay=".6s"
+                    data-wow-duration="2s">
                         <div class="item">
                             <img src="img/portfolio-3.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-4 wow fadeInLeft">
+                    <div class="col-4 wow fadeInLeft" data-wow-offset="300" data-wow-delay=".6s"
+                    data-wow-duration="2s">
                         <div class="item">
                             <img src="img/portfolio-4.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-4 wow fadeInUpBig">
+                    <div class="col-4 wow fadeInUpBig" data-wow-offset="300" data-wow-delay=".6s"
+                    data-wow-duration="2s">
                         <div class="item">
                             <img src="img/portfolio-5.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-4 wow fadeInRight">
+                    <div class="col-4 wow fadeInRight" data-wow-offset="300" data-wow-delay=".6s"
+                    data-wow-duration="2s">
                         <div class="item">
                             <img src="img/portfolio-1.jpg" alt="">
                         </div>
@@ -229,7 +233,7 @@
                         <div class="col-3">
                             <div class="item">
                                 <div class="img-1">
-                                <img src="img/funfact-1.png" alt="">
+                                    <img src="img/funfact-1.png" alt="">
                                 </div>
                                 <div class="title">
                                     120
@@ -242,8 +246,8 @@
                         <div class="col-3">
                             <div class="item">
                                 <div class="img-2">
-                                <img src="img/funfact-2.png" alt="">
-                            </div>
+                                    <img src="img/funfact-2.png" alt="">
+                                </div>
                                 <div class="title">
                                     310
                                 </div>
@@ -255,7 +259,7 @@
                         <div class="col-3">
                             <div class="item">
                                 <div class="img-3">
-                                <img src="img/funfact-3.png" alt="">
+                                    <img src="img/funfact-3.png" alt="">
                                 </div>
                                 <div class="title">
                                     510
@@ -268,7 +272,7 @@
                         <div class="col-3">
                             <div class="item">
                                 <div class="img-4">
-                                <img src="img/funfact-4.png" alt="">
+                                    <img src="img/funfact-4.png" alt="">
                                 </div>
                                 <div class="title">
                                     720
@@ -283,6 +287,47 @@
             </div>
         </div>
     </section>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="title">
+                say hello
+            </div>
+            <div class="contact__form">
+                <form>
+                    <div class="form__column">
+                        <div class="form__col-1">
+                            <input type="text" placeholder="name" required>
+                            <input type="text" placeholder="email" required>
+                        </div>
+                        <div class="form__col-2">
+                            <textarea placeholder="Message" required></textarea>
+                            <input type="submit" value="Send >">
+                        </div>
+                    </div>
+                </form>
+                <div class="social">
+                    <ul>
+                        <li><a class="facebook" href="#"></a></li>
+                        <li><a class="twitter" href="#"></a></li>
+                        <li><a class="linkedin" href="#"></a></li>
+                        <li><a class="google" href="#"></a></li>
+                        <li><a class="behance" href="#"></a></li>
+                        <li><a class="dribbble" href="#"></a></li>
+                    </ul>
+                    <div class="copy">
+                        <span>
+                                2017. All Right Reserved
+                        </span>
+                    </div>
+                    <div class="go__to-home">
+                        <a class="to-home" href="#home">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
