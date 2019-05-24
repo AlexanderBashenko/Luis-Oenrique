@@ -509,3 +509,191 @@ li {
 .funfact .img-4 {
   padding-top: 16px;
 }
+
+.footer {
+  background-image: url(../img/footer.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  min-height: 790px;
+  padding-top: 120px;
+  text-align: center;
+  position: relative;
+}
+
+.footer .title {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 49px;
+  letter-spacing: 1.2px;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.footer .title:before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #c1c1c1;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.footer input[type="text"] {
+  max-width: 370px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgba(33, 33, 33, 0.8);
+  line-height: 67px;
+  margin-bottom: 30px;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+}
+
+.footer textarea {
+  max-width: 745px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 210px;
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+  padding: 13px;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  resize: none;
+  line-height: 67px;
+  font-family: "Asap", sans-serif;
+  font-weight: 400;
+  color: rgba(33, 33, 33, 0.8);
+}
+
+.footer input[type="submit"] {
+  padding: 0px 36px 0px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 50px;
+  margin-bottom: 60px;
+}
+
+.footer ul {
+  text-align: left;
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer a {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-left: 4px;
+  text-decoration: none;
+}
+
+.footer a:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  top: 25px;
+}
+
+.footer a:after {
+  content: "\f09a";
+  font-size: 16px;
+  color: #4d4d4d;
+  font-family: 'icomoon';
+  position: absolute;
+  top: 30px;
+  left: 9px;
+}
+
+.footer .twitter:after {
+  content: "\f099";
+  left: 7px;
+  color: #fff;
+}
+
+.footer .twitter:before {
+  background-color: #0084b4;
+}
+
+.footer .linkedin:after {
+  content: "\f0e1";
+  left: 7px;
+  top: 28px;
+}
+
+.footer .google:after {
+  content: "\f0d5";
+  left: 4px;
+}
+
+.footer .behance:after {
+  content: "\f1b4";
+  left: 5px;
+}
+
+.footer .dribbble:after {
+  content: "\f17d";
+  left: 7px;
+}
+
+.footer .go__to-home {
+  position: absolute;
+  right: 30px;
+  bottom: 190px;
+}
+
+.footer .to-home:after {
+  content: "\f106";
+  color: #4d4d4d;
+  font-size: 24px;
+  left: 18px;
+  top: 24px;
+}
+
+.footer .copy {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  position: relative;
+}
+
+.footer .copy:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
