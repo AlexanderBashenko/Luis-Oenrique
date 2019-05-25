@@ -1,4 +1,9 @@
 $(function(){
+    $('.btn__menu').on('click', function(){
+      $('.menu ul').slideToggle();
+    });
+
+
     $('.slider__inner').slick({
         dots: true,
         prevArrow: null,
@@ -35,7 +40,7 @@ $(function(){
 
 
 
-
-new WOW().init();
+    wow.init();
+// new WOW().init();
 
 });

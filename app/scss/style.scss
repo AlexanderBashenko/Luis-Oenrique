@@ -1,8 +1,5 @@
 @import 'vars';
 
-// font-family: 'Asap', sans-serif;
-// font-family: 'Montserrat', sans-serif;
-
 *{
     box-sizing: border-box;
 }
@@ -47,17 +44,16 @@ li{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    .logo{
+        margin-bottom: 180px;
+        display: inline-block;
+    }
     .header__content{
         background-image: url(../img/header-fon.png);
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: 80%;
         min-height: 645px;
-
-    }
-    .logo{
-        margin-bottom: 180px;
-        display: inline-block;
     }
     .header__title{
         color: $gray;
@@ -119,11 +115,10 @@ li{
             font-weight: 400;
             border-bottom: 2px solid transparent;
         &:hover{
-            text-transform: none;
             cursor: pointer;
             border-color: $gray;
-            transition: all 0.3s;
-            
+            font-size: 16px;
+            text-transform: none;
         }
         }
     }
@@ -246,6 +241,7 @@ li{
         background-image: url(../img/skill.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: contain;
         min-height: 408px;
     }
 }
@@ -595,4 +591,8 @@ li{
             left: 0;
         } 
     }
+}
+.btn__menu{
+    display: none;
+    font-size: 25px;
 }

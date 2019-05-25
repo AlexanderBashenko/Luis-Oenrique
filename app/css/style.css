@@ -54,6 +54,11 @@ li {
   background-position: center;
 }
 
+.header .logo {
+  margin-bottom: 180px;
+  display: inline-block;
+}
+
 .header .header__content {
   background-image: url(../img/header-fon.png);
   background-repeat: no-repeat;
@@ -61,11 +66,6 @@ li {
   -webkit-background-size: 80% 80%;
           background-size: 80%;
   min-height: 645px;
-}
-
-.header .logo {
-  margin-bottom: 180px;
-  display: inline-block;
 }
 
 .header .header__title {
@@ -143,12 +143,10 @@ li {
 }
 
 .header .menu a:hover {
-  text-transform: none;
   cursor: pointer;
   border-color: #4d4d4d;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  font-size: 16px;
+  text-transform: none;
 }
 
 .about {
@@ -291,6 +289,8 @@ li {
   background-image: url(../img/skill.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: contain;
+          background-size: contain;
   min-height: 408px;
 }
 
@@ -696,4 +696,9 @@ li {
   position: absolute;
   top: -30px;
   left: 0;
+}
+
+.btn__menu {
+  display: none;
+  font-size: 25px;
 }
